@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"strings"
 	"unicode"
 )
@@ -41,22 +42,14 @@ func DifferentWordsCount(s string) int {
 			}
 		}
 	}
+	if len(w) > 0 {
+		m[strings.Join(w, "")]++
+	}
 	return len(m)
 }
 
-// func main() {
-// 	gen2 := PowerGenerator(2)
-// 	gen3 := PowerGenerator(3)
-// 	fmt.Println(gen2())
-// 	fmt.Println(gen2())
-// 	fmt.Println(gen2())
-// 	fmt.Println(gen3())
-// 	fmt.Println(gen3())
-// 	fmt.Println(gen3())
-// 	fmt.Println(gen2())
-// 	fmt.Println(gen2())
-// 	fmt.Println(gen2())
-// 	fmt.Println(gen3())
-// 	fmt.Println(gen3())
-// 	fmt.Println(gen3())
-// }
+func main() {
+	fmt.Println(DifferentWordsCount("AbaCaba dabacaba DaBaCaBa"))
+	fmt.Println(DifferentWordsCount("sdf SDF sdf SdF sDF sDf sdf"))
+	fmt.Println(DifferentWordsCount("Even this statement will, well, probably wiil have equal words"))
+}
