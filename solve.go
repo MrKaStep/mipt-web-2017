@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"strings"
 	"unicode"
 )
@@ -20,7 +21,7 @@ func RemoveEven(s []int) []int {
 func PowerGenerator(a int) func() int {
 	t := 1
 	gen := func() int {
-		t *= 2
+		t *= a
 		return t
 	}
 	return gen
@@ -43,6 +44,19 @@ func DifferentWordsCount(s string) int {
 	return len(m)
 }
 
-// func main() {
-// 	fmt.Println(DifferentWordsCount("Hello, world!HELLO  wOrlD...12"))
-// }
+func main() {
+	gen2 := PowerGenerator(2)
+	gen3 := PowerGenerator(3)
+	fmt.Println(gen2())
+	fmt.Println(gen2())
+	fmt.Println(gen2())
+	fmt.Println(gen3())
+	fmt.Println(gen3())
+	fmt.Println(gen3())
+	fmt.Println(gen2())
+	fmt.Println(gen2())
+	fmt.Println(gen2())
+	fmt.Println(gen3())
+	fmt.Println(gen3())
+	fmt.Println(gen3())
+}
