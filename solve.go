@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 	"unicode"
 )
@@ -48,8 +47,8 @@ func DifferentWordsCount(s string) int {
 	return len(m)
 }
 
-func main() {
-	fmt.Println(DifferentWordsCount("AbaCaba dabacaba DaBaCaBa"))
-	fmt.Println(DifferentWordsCount("sdf SDF sdf SdF sDF sDf sdf"))
-	fmt.Println(DifferentWordsCount("Even this statement will, well, probably wiil have equal words"))
-}
+// func main() {
+// 	fmt.Println(DifferentWordsCount("AbaCaba dabacaba DaBaCaBa"))
+// 	fmt.Println(DifferentWordsCount("sdf SDF sdf SdF sDF sDf sdf"))
+// 	fmt.Println(DifferentWordsCount("Even this statement will, well, probably wiil have equal words"))
+// }
