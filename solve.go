@@ -20,8 +20,9 @@ func RemoveEven(s []int) []int {
 // PowerGenerator returns generator of powers of given integer
 func PowerGenerator(a int) func() int {
 	t := 1
+	d := a
 	gen := func() int {
-		t *= a
+		t *= d
 		return t
 	}
 	return gen
