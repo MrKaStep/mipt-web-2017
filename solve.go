@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 	"unicode"
 )
@@ -45,19 +44,19 @@ func DifferentWordsCount(s string) int {
 	return len(m)
 }
 
-func main() {
-	gen2 := PowerGenerator(2)
-	gen3 := PowerGenerator(3)
-	fmt.Println(gen2())
-	fmt.Println(gen2())
-	fmt.Println(gen2())
-	fmt.Println(gen3())
-	fmt.Println(gen3())
-	fmt.Println(gen3())
-	fmt.Println(gen2())
-	fmt.Println(gen2())
-	fmt.Println(gen2())
-	fmt.Println(gen3())
-	fmt.Println(gen3())
-	fmt.Println(gen3())
-}
+// func main() {
+// 	gen2 := PowerGenerator(2)
+// 	gen3 := PowerGenerator(3)
+// 	fmt.Println(gen2())
+// 	fmt.Println(gen2())
+// 	fmt.Println(gen2())
+// 	fmt.Println(gen3())
+// 	fmt.Println(gen3())
+// 	fmt.Println(gen3())
+// 	fmt.Println(gen2())
+// 	fmt.Println(gen2())
+// 	fmt.Println(gen2())
+// 	fmt.Println(gen3())
+// 	fmt.Println(gen3())
+// 	fmt.Println(gen3())
+// }
