@@ -61,8 +61,8 @@ func AddNewUrl(w http.ResponseWriter, r *http.Request) {
 func GetPostedUrl(w http.ResponseWriter, r *http.Request) {
     vars := mux.Vars(r)
     key := vars["key"]
-    w.WriteHeader(http.StatusMovedPermanently)
     w.Header().Set("Location", shortToFull[key])
+    w.WriteHeader(http.StatusMovedPermanently)
     fmt.Println(shortToFull[key])
 }
 
